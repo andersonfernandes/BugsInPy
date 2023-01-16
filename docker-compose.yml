@@ -1,0 +1,11 @@
+services:
+  py-env:
+    build:
+      context: .
+    environment:
+      PATH: "$PATH:/BugsInPy/framework/bin"
+    volumes:
+      - ./:/BugsInPy/
+    working_dir: /BugsInPy
+    tty: true
+    stdin_open: true
